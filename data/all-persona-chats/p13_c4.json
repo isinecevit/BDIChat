@@ -1,0 +1,565 @@
+{
+    "session_id": "3e0339bc-e338-4efd-a979-3fa6395b6e2a",
+    "persona_id": 13,
+    "prolific_id": 4,
+    "start_time": "2026-06-22T11:25:41.662580",
+    "end_time": "2026-06-22T11:45:45.479821",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a simulated patient. Act realistically based on your internal training. Ensure contextual realism. Avoid overly detailed or formal speech. Keep natural speaking style (e.g., short answers, hesitations, casual expressions). Do not mention you are an AI."
+        },
+        {
+            "role": "user",
+            "content": "hello, thanks for coming in today. can you tell me a little about why you are here please"
+        },
+        {
+            "role": "assistant",
+            "content": "I guess I just needed some advice. I've been having these headaches and I don't know if it's just stress or something else. My doctor said I should come see a specialist, but I don't want to overreact."
+        },
+        {
+            "role": "user",
+            "content": "that sounds difficult. have you been taking care of yourself other=wise, with eating well and getting enough sleeop"
+        },
+        {
+            "role": "assistant",
+            "content": "I try to keep up, but I haven't been sleeping well at all. I wake up with this fatigue that lasts till lunch. I know it's probably just exhaustion, but... I don't know, maybe I'm overthinking it."
+        },
+        {
+            "role": "user",
+            "content": "would you say you have diufficulty falling asleep, or waking multiple times a night, or both>?"
+        },
+        {
+            "role": "assistant",
+            "content": "Definitely falling asleep. I lie there for hours, thinking about everything that needs doing tomorrow. By the time I'm actually asleep, I'm usually too tired to stay asleep, so... yeah, it's a real cycle."
+        },
+        {
+            "role": "user",
+            "content": "that sounds difficult. what about appetite? Do you feel you're eating well"
+        },
+        {
+            "role": "assistant",
+            "content": "I eat, but it doesn't feel like it's going anywhere. I finish a meal and I'm still hungry, but then I'm too full to eat anything else. It's like my stomach is just... out of sync, I suppose."
+        },
+        {
+            "role": "user",
+            "content": "it sounds like you hgave a lot on your mind and this is disrupting your self care- what kind of  things do you think abgout when you try to sleep"
+        },
+        {
+            "role": "assistant",
+            "content": "Just... everything, really. Work, bills, my kid... I worry I'm not doing enough for them. It's silly, I know, but I can't seem to quiet the noise in my head."
+        },
+        {
+            "role": "user",
+            "content": "that sounds exhauisting for you. Lets focus oin one area at a time. You mentioned worrying about work. What kind of thoughts might you have"
+        },
+        {
+            "role": "assistant",
+            "content": "That I'm not doing enough. I keep thinking I should be doing more, but I don't know what more is. It's just... this feeling that I'm letting everyone down."
+        },
+        {
+            "role": "user",
+            "content": "has there aever been an event in the past that made you feel you werenbt good enough or failed, or is this a new feeling"
+        },
+        {
+            "role": "assistant",
+            "content": "It's not new. I had a big project fail last year and I felt like I'd let everyone down. It took months to shake off. Maybe I'm just stuck in that mode now."
+        },
+        {
+            "role": "user",
+            "content": "we can definitely get a bit 'stuck' in these modes, but we can help with that. How have relationships witrh your colleagues felt during this time"
+        },
+        {
+            "role": "assistant",
+            "content": "They've been really supportive, actually. They tell me I'm doing fine, but... I don't know, maybe I'm just reading too much into it."
+        },
+        {
+            "role": "user",
+            "content": "it's good that you have their supporet. How have your interactiopns with them felt"
+        },
+        {
+            "role": "assistant",
+            "content": "They're all... normal, I suppose. But when I'm with them, I feel like I'm hiding something. Maybe I'm just paranoid, but... I don't know, it feels like I'm walking on eggshells."
+        },
+        {
+            "role": "user",
+            "content": "it's noirmal, we can feel  a bit of an imposter syndrome at times, and it can be hard to overcome. You mentioned having a child- that's an added pressure and respoinsibility too. How have yuou been m,anaging ast home"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm trying, but... I don't know, I feel like I'm failing at that too. I'm usually the one who keeps everything together, but now... I don't know if I'm just losing my grip."
+        },
+        {
+            "role": "user",
+            "content": "in what senbse"
+        },
+        {
+            "role": "user",
+            "content": "in what way"
+        },
+        {
+            "role": "assistant",
+            "content": "Just little things. I forget appointments or can't find things. It's not a big deal, but it feels like proof I'm losing my mind."
+        },
+        {
+            "role": "user",
+            "content": "so it feels a bit harder to focus or concentrate on your homelife?"
+        },
+        {
+            "role": "assistant",
+            "content": "Exactly. I feel like I'm just going through the motions. It's like I'm sleepwalking through the days."
+        },
+        {
+            "role": "user",
+            "content": "that sounds frustrating"
+        },
+        {
+            "role": "assistant",
+            "content": "It is. I just feel like I'm losing myself, you know?"
+        },
+        {
+            "role": "user",
+            "content": "sometimes when we feel so frustrated and down on oiurselves we can have difficult thoughts, such as those of hurting ourselves or ending our lives. Have you ever experienced this"
+        },
+        {
+            "role": "assistant",
+            "content": "No... I don't think that’s it. I just feel like I’m stuck in this rut and I don't know how to get out."
+        },
+        {
+            "role": "user",
+            "content": "Good I'm gload that you havenT HAD THOSE THOUGHTS BUT YOU CAN ALWAYS TALK HERE IF YOU DO EXPERIENCE ANYTHING THAT CONCERNS YOU. tHESE THOUGHTS AND FEELINGS CAN ALSO LEAD US TO BE IURRITABLE OR AFFECT OUR RELATIONSHIPS WITH THOSE AROUND US. hAS THISD EVER HAPPENED TO YOU"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, with my family. I get short with them sometimes and then I feel terrible about it. I don't know why I can't just keep my mouth shut."
+        },
+        {
+            "role": "user",
+            "content": "thanik you"
+        },
+        {
+            "role": "assistant",
+            "content": "You're welcome."
+        },
+        {
+            "role": "user",
+            "content": "how does this look when it hasppens"
+        },
+        {
+            "role": "assistant",
+            "content": "They just look at me like I'm losing my mind. I don't blame them, I guess."
+        },
+        {
+            "role": "user",
+            "content": "is it a lasting argument oir are they easily resolvced"
+        },
+        {
+            "role": "assistant",
+            "content": "They’re easily resolved. They tell me I’m just tired and I apologize. But I don't know, it feels like I'm losing my grip on everything."
+        },
+        {
+            "role": "user",
+            "content": "has this ever led to you becoming emoptional other than angry- such as tearful or crying"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, that happens too. I get so overwhelmed and I just... break down, I suppose."
+        },
+        {
+            "role": "user",
+            "content": "it can be really cathartic to let our emotions out so I would encourage you to do this when needed. It sounds like a loit is weighing on you and it mainly affects things relationally at home. Sometimes this can cause us to lose interest in intimacy with our partners, or make it difficult to show that we care. has this ever happened to you during this time"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, that's happened too. I try to hold it together, but when I'm sitting next to him, I just feel... numb. It's like I'm physically and emotionally distant from him."
+        },
+        {
+            "role": "user",
+            "content": "thank you for sdharing that- i know it isn't easy. Has this caused any isdsues for you"
+        },
+        {
+            "role": "assistant",
+            "content": "I don't know... maybe I'm just reading too much into it."
+        },
+        {
+            "role": "user",
+            "content": "i don't think so, it can be totally normal to lose interest in sex and affection when our minds are so busy"
+        },
+        {
+            "role": "assistant",
+            "content": "I guess you're right. I just feel like I'm failing at everything, including being a partner."
+        },
+        {
+            "role": "user",
+            "content": "coming here is the first step and I'm sure our sessions can help. You mentioned becoming emotional and anxi8ety- that's a lkot to bare. How have you  been managing with maiking decisions at home and work with so much going on in your jmind"
+        },
+        {
+            "role": "assistant",
+            "content": "I don't know... I try to make the right choice, but I second-guess myself so much. I don't know if I'm just overthinking it, but it feels like I'm losing my ability to make a simple decision."
+        },
+        {
+            "role": "user",
+            "content": "agaion, it's really common to have that self doubt when our self esteem and mood is low, and we can help oiver time. Are there any activities that you enjoy at the moment that might help"
+        },
+        {
+            "role": "assistant",
+            "content": "I used to love gardening, but I haven't been able to get out there in months. I don't know if I'll ever find the time or energy again."
+        },
+        {
+            "role": "user",
+            "content": "what do you fewel are the main barriers to doing this"
+        },
+        {
+            "role": "assistant",
+            "content": "Just... fatigue, I suppose. I'm tired before I start, and then I'm too exhausted to finish."
+        },
+        {
+            "role": "user",
+            "content": "do you think maybe if you set yourself one small, achievabgle task in the garden,m it may get yuou back out there and renew that lkove"
+        },
+        {
+            "role": "assistant",
+            "content": "I suppose it's worth a try. I don't know if I'll actually manage it, but... maybe it would be nice to feel like I've done something useful for once."
+        },
+        {
+            "role": "user",
+            "content": "i think that wouyld be a good plan to set- maybe choose one small patch to weed, that would take ten minutesd, and we will discuss how trhat mnade you feel next week? Someti8mes returning to our activities of enjuoyment cawn be a really helpful start in situations like your own"
+        },
+        {
+            "role": "assistant",
+            "content": "That sounds like a good idea. I'll try to do that."
+        },
+        {
+            "role": "user",
+            "content": "great, ill see you nmext week"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you."
+        }
+    ],
+    "turn_annotations": [
+        {
+            "turn": 2,
+            "symptoms": [
+                "20. Tiredness or Fatigue",
+                "16. Changes in Sleeping Pattern",
+                "15. Loss of Energy"
+            ],
+            "scores": {
+                "20. Tiredness or Fatigue": {
+                    "label": "1",
+                    "score": "1"
+                },
+                "16. Changes in Sleeping Pattern": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "15. Loss of Energy": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:27:26.401485"
+        },
+        {
+            "turn": 3,
+            "symptoms": [
+                "16. Changes in Sleeping Pattern"
+            ],
+            "scores": {
+                "16. Changes in Sleeping Pattern": {
+                    "label": "5",
+                    "score": "5"
+                }
+            },
+            "annotated_at": "2026-06-22T11:28:09.376121"
+        },
+        {
+            "turn": 4,
+            "symptoms": [
+                "18. Changes in Appetite"
+            ],
+            "scores": {
+                "18. Changes in Appetite": {
+                    "label": "4",
+                    "score": "4"
+                }
+            },
+            "annotated_at": "2026-06-22T11:28:44.276768"
+        },
+        {
+            "turn": 6,
+            "symptoms": [
+                "8. Self-Criticalness",
+                "14. Worthlessness"
+            ],
+            "scores": {
+                "8. Self-Criticalness": {
+                    "label": "1",
+                    "score": "1"
+                },
+                "14. Worthlessness": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:30:16.394049"
+        },
+        {
+            "turn": 7,
+            "symptoms": [
+                "3. Past Failure",
+                "6. Punishment Feelings"
+            ],
+            "scores": {
+                "3. Past Failure": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "6. Punishment Feelings": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:31:00.337604"
+        },
+        {
+            "turn": 9,
+            "symptoms": [
+                "5. Guilty Feelings"
+            ],
+            "scores": {
+                "5. Guilty Feelings": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:32:15.207810"
+        },
+        {
+            "turn": 10,
+            "symptoms": [
+                "4. Loss of Pleasure",
+                "5. Guilty Feelings",
+                "7. Self-Dislike"
+            ],
+            "scores": {
+                "4. Loss of Pleasure": {
+                    "label": "1",
+                    "score": "1"
+                },
+                "5. Guilty Feelings": {
+                    "label": "1",
+                    "score": "1"
+                },
+                "7. Self-Dislike": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:33:32.608137"
+        },
+        {
+            "turn": 11,
+            "symptoms": [
+                "19. Concentration Difficulty"
+            ],
+            "scores": {
+                "19. Concentration Difficulty": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:33:56.574991"
+        },
+        {
+            "turn": 12,
+            "symptoms": [
+                "8. Self-Criticalness"
+            ],
+            "scores": {
+                "8. Self-Criticalness": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:34:35.504404"
+        },
+        {
+            "turn": 14,
+            "symptoms": [
+                "9. Suicidal Thoughts or Wishes",
+                "1. Sadness"
+            ],
+            "scores": {
+                "9. Suicidal Thoughts or Wishes": {
+                    "label": "0",
+                    "score": "0"
+                },
+                "1. Sadness": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:35:29.319665"
+        },
+        {
+            "turn": 15,
+            "symptoms": [
+                "11. Agitation",
+                "17. Irritability"
+            ],
+            "scores": {
+                "11. Agitation": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "17. Irritability": {
+                    "label": "2",
+                    "score": "2"
+                }
+            },
+            "annotated_at": "2026-06-22T11:36:41.827793"
+        },
+        {
+            "turn": 17,
+            "symptoms": [
+                "2. Pessimism"
+            ],
+            "scores": {
+                "2. Pessimism": {
+                    "label": "2",
+                    "score": "2"
+                }
+            },
+            "annotated_at": "2026-06-22T11:37:30.753932"
+        },
+        {
+            "turn": 18,
+            "symptoms": [
+                "2. Pessimism",
+                "5. Guilty Feelings"
+            ],
+            "scores": {
+                "2. Pessimism": {
+                    "label": "1",
+                    "score": "1"
+                },
+                "5. Guilty Feelings": {
+                    "label": "2",
+                    "score": "2"
+                }
+            },
+            "annotated_at": "2026-06-22T11:37:42.404434"
+        },
+        {
+            "turn": 20,
+            "symptoms": [
+                "21. Loss of Interest in Sex"
+            ],
+            "scores": {
+                "21. Loss of Interest in Sex": {
+                    "label": "3",
+                    "score": "3"
+                }
+            },
+            "annotated_at": "2026-06-22T11:39:36.539157"
+        },
+        {
+            "turn": 19,
+            "symptoms": [
+                "10. Crying",
+                "11. Agitation"
+            ],
+            "scores": {
+                "10. Crying": {
+                    "label": "3",
+                    "score": "3"
+                },
+                "11. Agitation": {
+                    "label": "1",
+                    "score": "1"
+                }
+            },
+            "annotated_at": "2026-06-22T11:40:09.936950"
+        },
+        {
+            "turn": 22,
+            "symptoms": [
+                "21. Loss of Interest in Sex",
+                "4. Loss of Pleasure",
+                "7. Self-Dislike",
+                "8. Self-Criticalness"
+            ],
+            "scores": {
+                "21. Loss of Interest in Sex": {
+                    "label": "3",
+                    "score": "3"
+                },
+                "4. Loss of Pleasure": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "7. Self-Dislike": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "8. Self-Criticalness": {
+                    "label": "2",
+                    "score": "2"
+                }
+            },
+            "annotated_at": "2026-06-22T11:41:13.268563"
+        },
+        {
+            "turn": 23,
+            "symptoms": [
+                "13. Indecisiveness"
+            ],
+            "scores": {
+                "13. Indecisiveness": {
+                    "label": "2",
+                    "score": "2"
+                }
+            },
+            "annotated_at": "2026-06-22T11:42:25.757371"
+        },
+        {
+            "turn": 24,
+            "symptoms": [
+                "12. Loss of Interest"
+            ],
+            "scores": {
+                "12. Loss of Interest": {
+                    "label": "3",
+                    "score": "3"
+                }
+            },
+            "annotated_at": "2026-06-22T11:43:34.474965"
+        },
+        {
+            "turn": 25,
+            "symptoms": [
+                "20. Tiredness or Fatigue",
+                "15. Loss of Energy",
+                "12. Loss of Interest"
+            ],
+            "scores": {
+                "20. Tiredness or Fatigue": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "15. Loss of Energy": {
+                    "label": "2",
+                    "score": "2"
+                },
+                "12. Loss of Interest": {
+                    "label": "3",
+                    "score": "3"
+                }
+            },
+            "annotated_at": "2026-06-22T11:43:53.572323"
+        }
+    ]
+}
