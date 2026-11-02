@@ -70,7 +70,7 @@ Other uses include predicting the overall BDI-II score (from the full dialogue o
 | `data/bdichat_turn_annotations.csv` | Turn-level table: 2,332 rows, one per turn, with the expert message, persona reply, symptom flags and scores. |
 | `data/bdichat_persona_clinician_symptom.csv` | Final BDI-II item scores, total and severity category given by each expert for each persona (100 rows). |
 | `data/bdichat_consensus_scores.csv` | Consensus item scores, total and severity category per persona (20 rows). |
-| `experiments` | Implementation for the two tasks introduced in the paper. |
+| `experiments/` | Implementation for the two tasks introduced in the paper. |
 | `assets/` | Annotation guidelines given to the experts (PDF) and the screenshot of the annotation interface. |
 
 ## Data Format
