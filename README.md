@@ -52,7 +52,7 @@ We provide baselines for two tasks. Fine-tuned encoders outperform zero-shot GPT
 | SBERT, fine-tuned | 0.519 | 0.493 | 0.506 |
 | MentalBERT, fine-tuned | **0.531** | **0.534** | **0.532** |
 
-You can access the fine-tuned MentalBERT model from: https://drive.google.com/drive/folders/1jhmJUoTRMGrpLf_UHPANDnXlwATFAzi2?usp=sharing 
+The fine-tuned MentalBERT model can be accessed via: https://drive.google.com/drive/folders/1jhmJUoTRMGrpLf_UHPANDnXlwATFAzi2?usp=sharing 
 
 **Symptom Severity Detection** (4-class ordinal, 0–3)
 
@@ -61,6 +61,8 @@ You can access the fine-tuned MentalBERT model from: https://drive.google.com/dr
 | GPT-4o-mini (zero-shot) | 0.450 | 0.727 | 0.430 |
 | SBERT, fine-tuned | 0.543 | 0.596 | 0.601 |
 | MentalBERT, fine-tuned | **0.575** | **0.510** | **0.638** |
+
+The fine-tuned MentalBERT model can be accessed via: https://drive.google.com/drive/folders/1ToQVJKoKQ994CW-mnjyICoXrt8Ysqvjk?usp=sharing
 
 Other uses include predicting the overall BDI-II score (from the full dialogue or incrementally), building full relevance-plus-severity pipelines, training interviewer models that ask about uncovered symptoms, and checking how consistent LLM personas are across interviewers.
 
