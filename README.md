@@ -6,7 +6,7 @@ Depression often goes undiagnosed because access to mental health professionals 
 
 BDIChat is, to our knowledge, the first English dataset that combines multi-turn dialogue, expert annotation with a clinical instrument, turn-level multi-label symptom annotation, and symptom-level severity scores.
 
-## At a glance
+## Summary
 
 | | |
 |---|---|
@@ -17,13 +17,13 @@ BDIChat is, to our knowledge, the first English dataset that combines multi-turn
 | **Instrument** | Beck Depression Inventory-II (21 symptoms, each scored 0–3) |
 | **Language** | English |
 
-## What is annotated
+## What Is Annotated?
 
 - **Symptom relevance.** For each turn (one expert message plus one persona reply), the expert selects which BDI-II items the turn informs. A turn can have several symptoms or none. About 81% of turns have at least one symptom flagged.
 - **Symptom severity.** Each flagged symptom gets a score from 0 (absent) to 3 (most severe). Experts could revise scores as the conversation went on, and did so for 22.5% of items.
 - **Consensus scores.** For each persona, the item scores from the five experts are averaged into one consensus score per BDI-II item, giving a total score and severity category (minimal 0–13, mild 14–19, moderate 20–28, severe 29–63).
 
-## Data collection
+## Data Collection
 
 **Personas.** We used the 20 LLM personas from eRisk 2026 Task 1 (conversational depression detection). Each is a LoRA adapter on Meta-Llama-3-8B-Instruct, fine-tuned on user histories of a different BDI-II severity, so together they cover minimal, mild, moderate and severe depression. The personas are not based on, and do not mimic, any real individual.
 
@@ -39,11 +39,11 @@ BDIChat is, to our knowledge, the first English dataset that combines multi-turn
 
 **Participation and anonymity.** Experts were told the purpose of the study, what data would be stored, that the patients are simulated, and that they could withdraw at any time. They gave informed consent and were paid well above average. We replaced Prolific IDs with our own indices and release no demographic data.
 
-## Tasks and baselines
+## Tasks and Baselines
 
 We provide baselines for two tasks. Fine-tuned encoders outperform zero-shot GPT-4o-mini on both.
 
-**Symptom relevance detection** (multi-label, micro-averaged)
+**Symptom Relevance Detection** (multi-label, micro-averaged)
 
 | Model | P | R | F1 |
 |---|---|---|---|
@@ -51,7 +51,7 @@ We provide baselines for two tasks. Fine-tuned encoders outperform zero-shot GPT
 | SBERT, fine-tuned | 0.519 | 0.493 | 0.506 |
 | MentalBERT, fine-tuned | **0.531** | **0.534** | **0.532** |
 
-**Symptom severity detection** (4-class ordinal, 0–3)
+**Symptom Severity Detection** (4-class ordinal, 0–3)
 
 | Model | Accuracy | MAE | QWK |
 |---|---|---|---|
@@ -61,7 +61,7 @@ We provide baselines for two tasks. Fine-tuned encoders outperform zero-shot GPT
 
 Other uses include predicting the overall BDI-II score (from the full dialogue or incrementally), building full relevance-plus-severity pipelines, training interviewer models that ask about uncovered symptoms, and checking how consistent LLM personas are across interviewers.
 
-## Repository contents
+## Repository Contents
 
 | Path | Description |
 |---|---|
@@ -71,9 +71,9 @@ Other uses include predicting the overall BDI-II score (from the full dialogue o
 | `data/bdichat_consensus_scores.csv` | Consensus item scores, total and severity category per persona (20 rows). |
 | `assets/` | Annotation guidelines given to the experts (PDF) and the screenshot of the annotation interface. |
 
-## Data format
+## Data Format
 
-### Conversation files (`data/all-persona-chats/`)
+### Conversation Files (`data/all-persona-chats/`)
 
 Each file is one interview:
 
@@ -103,7 +103,7 @@ Each file is one interview:
 - `messages` follows the chat format. The `system` message is the persona instruction, `user` is the expert and `assistant` is the simulated patient. Turn *n* is the *n*-th `user` message and the `assistant` reply after it.
 - `turn_annotations` lists the symptoms the expert flagged for a turn and the score they gave each one. Turns with no flagged symptom have an empty `symptoms` list.
 
-### Turn-level table (`bdichat_turn_annotations.csv`)
+### Turn-level Table (`bdichat_turn_annotations.csv`)
 
 | Column | Meaning |
 |---|---|
@@ -112,11 +112,11 @@ Each file is one interview:
 | `1. Sadness` … `21. Loss of Interest in Sex` | 1 if the expert flagged this BDI-II item as relevant to the turn, otherwise 0 |
 | `1.Score` … `21.Score` | Severity score (0–3) the expert gave the item at this turn, or `-1` if the item was not flagged |
 
-### Session and persona tables
+### Session and Persona Tables
 
 `bdichat_persona_clinician_symptom.csv` has `personaId`, `clinicianId`, the 21 item scores, `BDI Total` and `Severity`. `bdichat_consensus_scores.csv` has the same columns per `personaId`, where item scores are the consensus across the five experts.
 
-### Loading the data
+### Loading The Data
 
 ```python
 import pandas as pd
@@ -135,9 +135,9 @@ turns["n_symptoms"] = turns[symptom_cols].sum(axis=1)
 - **Consensus scores are not clinically validated ground truth.**
 - **Scope.** 20 personas, English only, BDI-II only. The annotator pool was predominantly female and white.
 
-## Ethical considerations
+## Ethical Considerations
 
-All patient utterances come from LLM personas that are not based on any real individual. Experts gave informed consent, were told about possibly distressing topics, and could withdraw at any time. No personally identifying or demographic information is included; participant IDs are anonymised.
+All patient utterances were generated by simulated LLM personas that are not based on or imitative of any real individual. The participants were mental health professionals who were informed of the study purpose, the data collected and stored, confidentiality arrangements, possible distressing topics, and their right to withdraw at any time, and provided informed consent before participation. They were compensated well above average. No personally identifying or demographic information is included in BDIChat. 
 
 BDIChat is intended for research on conversational depression screening. **It is not a diagnostic tool and not a substitute for professional mental health care.**
 
@@ -151,4 +151,4 @@ Isin Su Ecevit, Ana-Maria Bucur and Fabio Crestani, Università della Svizzera i
 
 ## License
 
-<!-- Add your license here, e.g. CC BY 4.0 for the data. -->
+MIT
