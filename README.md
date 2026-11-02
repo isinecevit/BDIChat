@@ -133,7 +133,6 @@ turns["n_symptoms"] = turns[symptom_cols].sum(axis=1)
 
 - **Simulated patients.** Personas are LLMs, so their replies may depend on how a question is phrased and may not reflect how real patients express symptoms.
 - **Different conversations per expert.** No two experts had the same conversation with a persona. Item-level agreement is low (mean Krippendorff’s α = 0.223; total-score α = 0.468), which reflects both clinical disagreement and different information elicited.
-- **Consensus scores are not clinically validated ground truth.**
 - **Scope.** 20 personas, English only, BDI-II only. The annotator pool was predominantly female and white.
 
 ## Ethical Considerations
