@@ -31,8 +31,9 @@ BDIChat is, to our knowledge, the first English dataset that combines multi-turn
 
 **Interview and annotation.** Experts chatted with the persona on a platform hosted on Hugging Face Spaces and were asked to interview it as they would a real patient. A turn is one expert message plus one persona reply. After each turn, the expert could select any number of BDI-II items (or none) that the turn revealed and score them from 0 to 3. A side panel tracked which items had been scored so far. Once every item was scored, the expert could submit or keep talking to revise scores they were unsure about. The full instructions are in [`assets/`](assets).
 
-![Chat interface shown to the experts while they interviewed a persona](https://github.com/isinecevit/BDIChat/blob/main/assets/crowdsourcing-chat-setup.png?raw=true)
-
+<p align="center">
+  <img src="https://github.com/isinecevit/BDIChat/blob/main/assets/crowdsourcing-chat-setup.png?raw=true" alt="Chat interface shown to the experts while they interviewed a persona" width="500">
+</p>
 *The chat screen shown to the experts while they interviewed a persona and annotated each turn.*
 
 **Consensus scores.** Because each expert held a different conversation, the five final item scores per persona were averaged into a single consensus score per item. We chose averaging on the advice of a graduate student specialising in psychology. These scores are in `data/bdichat_consensus_scores.csv`.
