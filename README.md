@@ -52,6 +52,8 @@ We provide baselines for two tasks. Fine-tuned encoders outperform zero-shot GPT
 | SBERT, fine-tuned | 0.519 | 0.493 | 0.506 |
 | MentalBERT, fine-tuned | **0.531** | **0.534** | **0.532** |
 
+You can access the fine-tuned MentalBERT model from: https://drive.google.com/drive/folders/1jhmJUoTRMGrpLf_UHPANDnXlwATFAzi2?usp=sharing 
+
 **Symptom Severity Detection** (4-class ordinal, 0–3)
 
 | Model | Accuracy | MAE | QWK |
