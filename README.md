@@ -1,8 +1,10 @@
 # BDIChat: A Conversational Depression Detection Dataset using Beck’s Depression Inventory-II
 
-BDIChat consists of conversations between simulated Early Risk Prediction on the Internet Lab (eRisk) patients and mental health professionals, where the patients are asked about their symptoms by the clinician in order to fill the BDI-II test on their behalf. After every turn, the professional marks which BDI-II symptoms the exchange revealed and scores their severity.
+Depression often goes undiagnosed because access to mental health professionals is limited. Conversational agents could offer an accessible first step for screening, but building them requires dialogue data that links individual utterances to clinically relevant symptoms and their severity. Existing depression datasets are mostly static posts or carry only an overall diagnostic label, so they cannot support turn-level symptom inference or severity assessment.
 
-![AnnotationGuidelines1](https://github.com/isinecevit/BDIChat/blob/main/assets/crowdsourcing-chat-setup.png?raw=true)
+**BDIChat** fills this gap. It contains 100 multi-turn interviews between 20 simulated patient personas (from the Early Risk Prediction on the Internet Lab, eRisk) and 51 real mental health professionals. The professionals ask the persona about their symptoms in order to fill in the Beck Depression Inventory-II (BDI-II) on their behalf. After each turn they mark which BDI-II symptoms the exchange revealed and score how severe each one is, given the context of the conversation.
+
+BDIChat is, to our knowledge, the first English dataset that combines multi-turn dialogue, expert annotation with a clinical instrument, turn-level multi-label symptom annotation, and symptom-level severity scores.
 
 ## At a glance
 
@@ -15,13 +17,27 @@ BDIChat consists of conversations between simulated Early Risk Prediction on the
 | **Instrument** | Beck Depression Inventory-II (21 symptoms, each scored 0–3) |
 | **Language** | English |
 
-BDIChat is, to our knowledge, the first English dataset that combines multi-turn dialogue, expert annotation with a clinical instrument, turn-level multi-label symptom annotation, and symptom-level severity scores.
-
 ## What is annotated
 
 - **Symptom relevance.** For each turn (one expert message plus one persona reply), the expert selects which BDI-II items the turn informs. A turn can have several symptoms or none. About 81% of turns have at least one symptom flagged.
 - **Symptom severity.** Each flagged symptom gets a score from 0 (absent) to 3 (most severe). Experts could revise scores as the conversation went on, and did so for 22.5% of items.
 - **Consensus scores.** For each persona, the item scores from the five experts are averaged into one consensus score per BDI-II item, giving a total score and severity category (minimal 0–13, mild 14–19, moderate 20–28, severe 29–63).
+
+## Data collection
+
+**Personas.** We used the 20 LLM personas from eRisk 2026 Task 1 (conversational depression detection). Each is a LoRA adapter on Meta-Llama-3-8B-Instruct, fine-tuned on user histories of a different BDI-II severity, so together they cover minimal, mild, moderate and severe depression. The personas are not based on, and do not mimic, any real individual.
+
+**Experts.** We recruited 51 mental health professionals on [Prolific](https://www.prolific.com), which verifies domain expertise through skills assessments, credential review and work-experience validation. 64.7% were psychologists, 25.5% clinical psychologists and 9.8% psychiatrists. All reported fluency in English. For each persona we hired five different experts, giving 100 conversations. Each expert interviewed between one and five personas.
+
+**Interview and annotation.** Experts chatted with the persona on a platform hosted on Hugging Face Spaces and were asked to interview it as they would a real patient. A turn is one expert message plus one persona reply. After each turn, the expert could select any number of BDI-II items (or none) that the turn revealed and score them from 0 to 3. A side panel tracked which items had been scored so far. Once every item was scored, the expert could submit or keep talking to revise scores they were unsure about. The full instructions are in [`assets/`](assets).
+
+![Chat interface shown to the experts while they interviewed a persona](https://github.com/isinecevit/BDIChat/blob/main/assets/crowdsourcing-chat-setup.png?raw=true)
+
+*The chat screen shown to the experts while they interviewed a persona and annotated each turn.*
+
+**Consensus scores.** Because each expert held a different conversation, the five final item scores per persona were averaged into a single consensus score per item. We chose averaging on the advice of a graduate student specialising in psychology. These scores are in `data/bdichat_consensus_scores.csv`.
+
+**Participation and anonymity.** Experts were told the purpose of the study, what data would be stored, that the patients are simulated, and that they could withdraw at any time. They gave informed consent and were paid well above average. We replaced Prolific IDs with our own indices and release no demographic data.
 
 ## Tasks and baselines
 
@@ -127,7 +143,7 @@ BDIChat is intended for research on conversational depression screening. **It is
 
 ## Citation
 
-Coming soon!
+Coming soon..
 
 ## Authors
 
